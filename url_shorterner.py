@@ -1,9 +1,8 @@
 class UrlShortenere(object):
     def shorten(self, url):
         parts = len(url) / 6
-        print(parts)
-        for letter in url:
-            print(ord(letter))
+        letter_codes = [ord(letter) for letter in url]
+        print(letter_codes)
 
 
 if __name__ == '__main__':
